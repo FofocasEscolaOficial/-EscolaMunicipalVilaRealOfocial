@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fofocas da 🏫 Vila Real</title>
+  <title>Fofocas da 🏫 Escola Municipal Vila Real</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
@@ -15,51 +15,36 @@
       background-attachment: fixed;
     }
 
-    .top-link {
-      padding: 10px 20px;
-      text-align: left;
-      font-size: 20px;
-    }
-
-    .top-link a {
-      color: #007bff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .logo-area {
-      background-color: #c6e6f7;
+    header {
+      background-color: #add8e6;
+      padding: 30px 20px;
       text-align: center;
-      padding: 20px;
-      margin: 0 auto 20px;
-      max-width: 300px;
-      border-radius: 8px;
-    }
-
-    .logo-area img {
-      width: 60px;
-      display: block;
-      margin: 0 auto 10px;
-    }
-
-    .logo-area span {
-      font-family: 'Pacifico', cursive;
-      font-size: 24px;
-      display: block;
       color: #333;
+      font-size: 36px;
+      font-family: 'Pacifico', cursive;
+      text-shadow: 1px 1px 2px #ffffff;
+      border-bottom: 4px solid #87cefa;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
-    .titulo-secundario {
-      font-family: 'Pacifico', cursive;
-      font-size: 28px;
-      color: #444;
-      text-align: center;
-      margin-bottom: 40px;
+    header div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 70px;
+      cursor: pointer;
     }
 
     .container {
       max-width: 900px;
-      margin: 0 auto;
+      margin: 40px auto;
       padding: 0 20px;
     }
 
@@ -103,22 +88,18 @@
       font-family: 'Pacifico', cursive;
     }
 
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .titulo-secundario {
+      font-family: 'Pacifico', cursive;
+      font-size: 28px;
+      color: #444;
+      text-align: center;
+      margin-bottom: 40px;
     }
 
-    .fofoca:nth-child(2) { animation-delay: 0.1s; }
-    .fofoca:nth-child(3) { animation-delay: 0.2s; }
-    .fofoca:nth-child(4) { animation-delay: 0.3s; }
-    .fofoca:nth-child(5) { animation-delay: 0.4s; }
-    .fofoca:nth-child(6) { animation-delay: 0.5s; }
-
     @media screen and (max-width: 600px) {
-      .logo-area span {
-        font-size: 20px;
+      header {
+        font-size: 28px;
+        padding: 20px 10px;
       }
 
       .fofoca {
@@ -129,26 +110,42 @@
       .fofoca::before {
         font-size: 24px;
       }
+
+      header img {
+        height: 50px;
+      }
+    }
+
+    /* Animações */
+    .fofoca:nth-child(2) { animation-delay: 0.1s; }
+    .fofoca:nth-child(3) { animation-delay: 0.2s; }
+    .fofoca:nth-child(4) { animation-delay: 0.3s; }
+    .fofoca:nth-child(5) { animation-delay: 0.4s; }
+    .fofoca:nth-child(6) { animation-delay: 0.5s; }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
-  <div class="top-link">
-    <a href="#">EscolaMunicipalVilaRealOfocial</a>
-  </div>
-
-  <div class="logo-area">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr7HIc6Evp3_fDSpXyOvreqMOSlKbN1esnpA&s" alt="Logo da escola">
-    <span>Fofocas da 🏫 Vila Real</span>
-  </div>
+  <header>
+    <div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr7HIc6Evp3_fDSpXyOvreqMOSlKbN1esnpA&s" alt="Logo da escola" onclick="location.reload()" />
+      <span>Fofocas da 🏫 Escola Municipal Vila Real</span>
+    </div>
+  </header>
 
   <div class="container">
     <div class="titulo-secundario">As fofocas mais quentes do recreio:</div>
-    <div class="fofoca">O site está em Construção 🚧</div>
-    <div class="fofoca">O site está em Construção 🚧</div>
-    <div class="fofoca">O site está em Construção 🚧</div>
-    <div class="fofoca">O site está em Construção 🚧</div>
-    <div class="fofoca">O site está em Construção 🚧</div>
+    <div class="fofoca">1. O site está em Construção 🚧</div>
+    <div class="fofoca">2. O site está em Construção 🚧</div>
+    <div class="fofoca">3. O site está em Construção 🚧</div>
+    <div class="fofoca">4. O site está em Construção 🚧</div>
+    <div class="fofoca">5. O site está em Construção 🚧</div>
   </div>
 
   <footer>
