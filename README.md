@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -14,38 +15,51 @@
       background-attachment: fixed;
     }
 
-    header {
-      background-color: #add8e6;
-      padding: 30px 20px;
-      color: #333;
-      font-size: 36px;
-      font-family: 'Pacifico', cursive;
-      text-shadow: 1px 1px 2px #ffffff;
-      border-bottom: 4px solid #87cefa;
-      position: sticky;
-      top: 0;
-      z-index: 10;
+    .top-link {
+      padding: 10px 20px;
+      text-align: left;
+      font-size: 20px;
     }
 
-    .header-content {
-      max-width: 900px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
+    .top-link a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .logo-area {
+      background-color: #c6e6f7;
       text-align: center;
+      padding: 20px;
+      margin: 0 auto 20px;
+      max-width: 300px;
+      border-radius: 8px;
     }
 
-    header img {
-      height: 70px;
-      cursor: pointer;
+    .logo-area img {
+      width: 60px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    .logo-area span {
+      font-family: 'Pacifico', cursive;
+      font-size: 24px;
+      display: block;
+      color: #333;
+    }
+
+    .titulo-secundario {
+      font-family: 'Pacifico', cursive;
+      font-size: 28px;
+      color: #444;
+      text-align: center;
+      margin-bottom: 40px;
     }
 
     .container {
       max-width: 900px;
-      margin: 40px auto;
+      margin: 0 auto;
       padding: 0 20px;
     }
 
@@ -89,23 +103,22 @@
       font-family: 'Pacifico', cursive;
     }
 
-    .footer-content {
-      max-width: 900px;
-      margin: 0 auto;
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
-    .titulo-secundario {
-      font-family: 'Pacifico', cursive;
-      font-size: 28px;
-      color: #444;
-      text-align: center;
-      margin-bottom: 40px;
-    }
+    .fofoca:nth-child(2) { animation-delay: 0.1s; }
+    .fofoca:nth-child(3) { animation-delay: 0.2s; }
+    .fofoca:nth-child(4) { animation-delay: 0.3s; }
+    .fofoca:nth-child(5) { animation-delay: 0.4s; }
+    .fofoca:nth-child(6) { animation-delay: 0.5s; }
 
     @media screen and (max-width: 600px) {
-      header {
-        font-size: 28px;
-        padding: 20px 10px;
+      .logo-area span {
+        font-size: 20px;
       }
 
       .fofoca {
@@ -116,47 +129,30 @@
       .fofoca::before {
         font-size: 24px;
       }
-
-      header img {
-        height: 50px;
-      }
-    }
-
-    .fofoca:nth-child(2) { animation-delay: 0.1s; }
-    .fofoca:nth-child(3) { animation-delay: 0.2s; }
-    .fofoca:nth-child(4) { animation-delay: 0.3s; }
-    .fofoca:nth-child(5) { animation-delay: 0.4s; }
-    .fofoca:nth-child(6) { animation-delay: 0.5s; }
-
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr7HIc6Evp3_fDSpXyOvreqMOSlKbN1esnpA&s" alt="Logo da escola" onclick="location.reload()" />
-      <span>Fofocas da 🏫 Vila Real</span>
-    </div>
-  </header>
+  <div class="top-link">
+    <a href="#">EscolaMunicipalVilaRealOfocial</a>
+  </div>
+
+  <div class="logo-area">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr7HIc6Evp3_fDSpXyOvreqMOSlKbN1esnpA&s" alt="Logo da escola">
+    <span>Fofocas da 🏫 Vila Real</span>
+  </div>
 
   <div class="container">
     <div class="titulo-secundario">As fofocas mais quentes do recreio:</div>
-    <div class="fofoca">1. O site está em Construção 🚧</div>
-    <div class="fofoca">2. O site está em Construção 🚧</div>
-    <div class="fofoca">3. O site está em Construção 🚧</div>
-    <div class="fofoca">4. O site está em Construção 🚧</div>
-    <div class="fofoca">5. O site está em Construção 🚧</div>
+    <div class="fofoca">O site está em Construção 🚧</div>
+    <div class="fofoca">O site está em Construção 🚧</div>
+    <div class="fofoca">O site está em Construção 🚧</div>
+    <div class="fofoca">O site está em Construção 🚧</div>
+    <div class="fofoca">O site está em Construção 🚧</div>
   </div>
 
   <footer>
-    <div class="footer-content">
-      © Criado pela turma do 5ºB.
-    </div>
+    © Criado pela turma do 5ºB.
   </footer>
 </body>
 </html>
