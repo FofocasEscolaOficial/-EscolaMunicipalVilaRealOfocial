@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fofocas da 🏫 Escola Municipal Vila Real</title>
+  <title>Fofocas da 🏫 Vila Real</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
@@ -135,7 +134,7 @@
   <header>
     <div>
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr7HIc6Evp3_fDSpXyOvreqMOSlKbN1esnpA&s" alt="Logo da escola" onclick="location.reload()" />
-      <span>Fofocas da 🏫 Escola Municipal Vila Real</span>
+      <span>Fofocas da 🏫 Vila Real</span>
     </div>
   </header>
 
