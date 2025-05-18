@@ -17,7 +17,6 @@
     header {
       background-color: #add8e6;
       padding: 30px 20px;
-      text-align: center;
       color: #333;
       font-size: 36px;
       font-family: 'Pacifico', cursive;
@@ -28,12 +27,15 @@
       z-index: 10;
     }
 
-    header div {
+    .header-content {
+      max-width: 900px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 15px;
       flex-wrap: wrap;
+      text-align: center;
     }
 
     header img {
@@ -87,6 +89,11 @@
       font-family: 'Pacifico', cursive;
     }
 
+    .footer-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
     .titulo-secundario {
       font-family: 'Pacifico', cursive;
       font-size: 28px;
@@ -115,7 +122,6 @@
       }
     }
 
-    /* Animações */
     .fofoca:nth-child(2) { animation-delay: 0.1s; }
     .fofoca:nth-child(3) { animation-delay: 0.2s; }
     .fofoca:nth-child(4) { animation-delay: 0.3s; }
@@ -132,7 +138,7 @@
 </head>
 <body>
   <header>
-    <div>
+    <div class="header-content">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr7HIc6Evp3_fDSpXyOvreqMOSlKbN1esnpA&s" alt="Logo da escola" onclick="location.reload()" />
       <span>Fofocas da 🏫 Vila Real</span>
     </div>
@@ -148,7 +154,9 @@
   </div>
 
   <footer>
-    © Criado pela turma do 5ºB.
+    <div class="footer-content">
+      © Criado pela turma do 5ºB.
+    </div>
   </footer>
 </body>
 </html>
